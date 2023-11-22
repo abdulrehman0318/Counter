@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="counter">
+      <span id="counter-value">0</span>
+      <div class="buttons">
+        <button id="increase-btn">Increase</button>
+        <button id="reset-btn">Reset</button>
+        <button id="decrease-btn">Decrease</button>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        const counterValue = document.getElementById('counter-value');
+        const increaseBtn = document.getElementById('increase-btn');
+        const decreaseBtn = document.getElementById('decrease-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        let counter = 0;
+        increaseBtn.addEventListener('click', () => {
+          counter++;
+          counterValue.textContent = counter;
+        });
+        decreaseBtn.addEventListener('click', () => {
+          counter--;
+          counterValue.textContent = counter;
+        });
+        resetBtn.addEventListener('click', () => {
+          counter = 0;
+          counterValue.textContent = counter;
+        });
+
+    </script>
+  </body>
+</html>

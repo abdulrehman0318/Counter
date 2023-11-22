@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgb(50, 50, 50);
+  min-height: 100vh;
+}
+body .counter {
+  text-align: center;
+  font-size: 24px;
+}
+body .counter #counter-value {
+  font-size: 5em;
+  color: #fff;
+  padding: 30px;
+}
+body .counter .buttons {
+  margin: 15px;
+}
+body .counter .buttons #increase-btn {
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+body .counter .buttons #reset-btn {
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+body .counter .buttons #decrease-btn {
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+}
